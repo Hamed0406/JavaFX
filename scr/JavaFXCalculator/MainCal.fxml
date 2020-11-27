@@ -7,11 +7,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="300.0" spacing="10.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="300.0" spacing="10.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaFXCalculator.MainController">
    <children>
       <StackPane prefHeight="50.0" prefWidth="200.0">
          <children>
-            <Label prefHeight="6.0" prefWidth="267.0">
+            <Label fx:id="result" prefHeight="6.0" prefWidth="267.0">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
@@ -19,22 +19,22 @@
          </children></StackPane>
       <HBox alignment="CENTER" prefHeight="50.0" prefWidth="300.0" spacing="10.0">
          <children>
-            <Button mnemonicParsing="false" prefWidth="50.0" text="7">
+            <Button mnemonicParsing="false" onAction="#processNumber" prefWidth="50.0" text="7">
                <font>
                   <Font size="18.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefWidth="50.0" text="8">
+            <Button mnemonicParsing="false" onAction="#processNumber" prefWidth="50.0" text="8">
                <font>
                   <Font size="18.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefWidth="50.0" text="9">
+            <Button mnemonicParsing="false" onAction="#processNumber" prefWidth="50.0" text="9">
                <font>
                   <Font size="18.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefWidth="50.0" text="/">
+            <Button mnemonicParsing="false" onAction="#processOperators" prefWidth="50.0" text="/">
                <font>
                   <Font size="18.0" />
                </font>
@@ -43,22 +43,22 @@
       </HBox>
       <HBox alignment="CENTER" layoutX="10.0" layoutY="71.0" prefHeight="50.0" prefWidth="300.0" spacing="10.0">
          <children>
-            <Button mnemonicParsing="false" prefWidth="50.0" text="4">
+            <Button mnemonicParsing="false" onAction="#processNumber" prefWidth="50.0" text="4">
                <font>
                   <Font size="18.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefWidth="50.0" text="5">
+            <Button mnemonicParsing="false" onAction="#processNumber" prefWidth="50.0" text="5">
                <font>
                   <Font size="18.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefWidth="50.0" text="6">
+            <Button mnemonicParsing="false" onAction="#processNumber" prefWidth="50.0" text="6">
                <font>
                   <Font size="18.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefWidth="50.0" text="*">
+            <Button mnemonicParsing="false" onAction="#processOperators" prefWidth="50.0" text="*">
                <font>
                   <Font size="18.0" />
                </font>
@@ -67,22 +67,22 @@
       </HBox>
       <HBox alignment="CENTER" layoutX="10.0" layoutY="132.0" prefHeight="50.0" prefWidth="300.0" spacing="10.0">
          <children>
-            <Button mnemonicParsing="false" prefWidth="50.0" text="1">
+            <Button mnemonicParsing="false" onAction="#processNumber" prefWidth="50.0" text="1">
                <font>
                   <Font size="18.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefWidth="50.0" text="2">
+            <Button mnemonicParsing="false" onAction="#processNumber" prefWidth="50.0" text="2">
                <font>
                   <Font size="18.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefWidth="50.0" text="3">
+            <Button mnemonicParsing="false" onAction="#processNumber" prefWidth="50.0" text="3">
                <font>
                   <Font size="18.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefWidth="50.0" text="-">
+            <Button mnemonicParsing="false" onAction="#processOperators" prefWidth="50.0" text="-">
                <font>
                   <Font size="18.0" />
                </font>
@@ -91,17 +91,17 @@
       </HBox>
       <HBox alignment="CENTER" layoutX="10.0" layoutY="192.0" prefHeight="50.0" prefWidth="300.0" spacing="10.0">
          <children>
-            <Button mnemonicParsing="false" prefHeight="39.0" prefWidth="110.0" text="0">
+            <Button mnemonicParsing="false" onAction="#processNumber" prefHeight="39.0" prefWidth="110.0" text="0">
                <font>
                   <Font size="18.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefWidth="50.0" text="=">
+            <Button mnemonicParsing="false" onAction="#processOperators" prefWidth="50.0" text="=">
                <font>
                   <Font size="18.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefWidth="50.0" text="+">
+            <Button mnemonicParsing="false" onAction="#processOperators" prefWidth="50.0" text="+">
                <font>
                   <Font size="18.0" />
                </font>
