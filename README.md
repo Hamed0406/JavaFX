@@ -1,4 +1,4 @@
-# JavaFX
+# JavaFX med JavaFX Scene Builder 2.0
 
 This Repository does contain some App with JavaFx.
 
